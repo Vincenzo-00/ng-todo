@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+input, button {
+    padding: 1%;
+}
+
+#risultato {
+    width: auto;
+    height: auto;
+    color: purple;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 2%;
+}

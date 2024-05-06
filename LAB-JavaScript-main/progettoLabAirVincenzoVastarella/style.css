@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display";
+    font-size: 1.2rem;
+}
+
+/* ##### BOX1 HEADER ###### */
+
+#header-box1 {
+    width: 100%;
+    background-color: #e2e1e1;
+    overflow: hidden;
+    padding: 0.5%;
+}
+
+#header-box1 img {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+#header-box1 img:first-child {
+    margin-left: 4%;
+}
+
+#box1 {
+    margin-right: 1.5%;
+    float: right;
+    width: 24%;
+}
+
+#box1 ul li {
+    display: inline-block;
+    padding: 0 4%;
+}
+
+#box1 ul li:nth-child(1), #box1 ul li:nth-child(2), #box1 ul li:nth-child(3) {
+    border-right: 2px solid black;
+}
+
+#box1 ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 0.6em;
+}
+
+/* ##### BOX2 HEADER ###### */ 
+
+#header-box2 {
+    width: 100%;
+    overflow: hidden;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+}
+
+#header-box2 .active {
+    border: transparent;
+    border: 5px solid transparent
+}
+
+#header-box2 .active:hover {
+    background-color: #cecdcd;
+    border-radius: 50%;
+    border-color: #cecdcd;
+}
+
+#header-box2 img:first-child {
+    margin-left: 4%;
+    display: inline-block;
+}
+
+#header-box2 img:nth-of-type(3) {
+    margin-right: 5%;
+}
+
+#box2 {
+    display: inline-block;
+    text-align: center;
+    margin-left: 8%;
+    width: 29%;
+    flex: 1;
+}
+
+#box2 ul li {
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 1.5%;
+    font-size: 0.9em;
+}
+
+#search {
+    display: inline-block;
+    background-color: #d1cfcf;
+    position: relative;
+    padding: 0.4%;
+    border-radius: 20px;
+}
+
+#search:hover {
+    background-color: #9e9a9a;
+}
+
+#search div {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+#search div img {
+    width: 20px;
+    height: 20px;
+}
+
+#search input {
+    width: 70%;
+    border: none;
+    background-color: #d1cfcf;
+    vertical-align: middle;
+    outline: none;
+    background-color: transparent;
+}
+
+#header-box2 .active img {
+    width: 25px;
+    height: 25px;
+}
+
+#header-box2 .active {
+    margin-left: 1%;
+}
+
+#header-box2 .active:last-of-type {
+    margin-right: 2.5%;
+}
+
+/* ##### BOX2 HEADER ###### */ 
+
+#header-box3 {
+    width: 100%;
+    background-color: #e2e1e1;
+    overflow: hidden;
+    padding: 0.5%;
+    text-align: center;
+}
+
+#header-box3 h3, p {
+    padding: 0.2%;
+    font-size: 0.9em;
+}
+

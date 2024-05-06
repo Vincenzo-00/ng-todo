@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+#titolo {
+    text-transform: uppercase;
+    color: black;
+}
+
+.testoRosso {
+    text-transform: uppercase;
+    color: red;
+}

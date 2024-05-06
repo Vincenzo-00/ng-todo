@@ -1,0 +1,22 @@
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li::before{
+    content: "\2023";
+    margin-right: 10px;
+    color: red;
+}
+
+/* ul li:hover::before{
+    content:"\10196";
+    color: green;
+} */
+
+ul li:nth-child(1):hover::before{
+    content:"\10196";
+    color: green;
+}
+

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2::before {
+    content: "Il mio nome è ";
+}
+
+h2::after {
+    content: " Vastarella";
+}

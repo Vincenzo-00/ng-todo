@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Ciao mondo</h1>
+
+    <script>
+      // dichiarazione variabile let nome; inizializzare varibaile (mettere dentro contenuto) let nome = "Testo";
+        let nome = "Vincenzo"; // varibaile stringa di testo
+        
+        let online = true; // variabile boolean
+        
+        let classeQuarta = ["Gherà", "Thom", "Giada"]; // variabile array. Gli array partono da 0 quindi: gherà=0, thom=1, giada=2
+        
+        //nome = "Giada"; // aggiornare variabile
+        
+        //console.log(nome); //loggare la variabile
+        
+        
+        console.log(classeQuarta[1]); // se devo loggare un array specifico devo mettere tra le [] il valore dell'array
+    
+        let persona = {         //oggetti
+            nome: "Vincenzo",
+            cognome: "Vastarella",
+            codiceFiscale: "dasdadasd",
+            eta: "24",
+            coloriPreferiti: ["rosso, nero, rosa"]
+        };
+        console.log(persona.cognome);
+
+        const nomeProva = 4.53535; //costante chè non può essere aggiornato
+        //console.log(typeof nome); // che tipologia è la variabile chiamata
+        
+        console.log(nomeProva.toFixed(2)); //quanti decimali deve avere la variabile
+
+        const numero="43"; //variabile di tipo string
+        
+        console.log(Number(numero)+3);
+        
+        const numeroEsempio = 43 + 5; // 43 % 5 (resto della divisione)
+
+        const numeroEsempio1 = 42 % 2; //se è un numero pari darà resto 0 se dispari sarà 1
+
+        const numeroEsempio2 = 10;
+        //numeroEsempio2++; //operatore di incremento
+        //numeroEsempio2 += 5; //somma senza riscrivere codice *= (moltiplicazione) ecc..
+
+        const numeroEsempio3 = "20";
+        //console.log(numeroEsempio3 > 50);  // != (diverso) == (uguale) 
+        console.log(numeroEsempio3 === 20); // controlla se il tipo è uguale. dato che "numeroEsempio3" è di tipo string darà false. vale anche per !==
+
+        let nomePersonale = "Vincenzo";
+        let testo = "Ciao sono" + nomePersonale;
+        console.log(nomePersonale);
+
+        let string = "ciao sono un ragazzo";
+        
+        console.log(string.length); //lunghezza stringa
+        
+        console.log(string[1]);
+        
+        console.log(string.length-1); //ultimo carattere
+        
+        console.log(string.indexOf("sono")); // vedere a che parte sono arrivato con la stringa
+        
+        let indexCorso = string.indexOf("sono");
+        console.log(string.slice(indexCorso)); //prendere solo la parte che mi interessa .slice
+
+        console.log(string.toUpperCase()); //tutto grande tolowercase tutto piccolo
+        
+        console.log(string.replace("sono" , "Biba")); // sostituire una parte di stringa
+
+        let citta = "Milano, Roma, Napoli; Venezia";
+        let data = ["Milano", "Roma", "Napoli", "Venezia"];
+        console.log(data[data.length-1]);
+
+        let dataEsempio = citta.split(","); //come creare un array da una variabile stringa
+        console.log(dataEsempio);
+
+        let cittaEsempio = data.join(","); //viceversa 
+        console.log(cittaEsempio);
+
+        data.push("Firenze"); //aggiungere elemento in coda .pop(toglie dalla coda) .unshift (aggiunge ad inizio) .shift (toglie all'inizio)
+        console.log(data);
+
+        let condizione = "condizion";
+        let condizioneNumero = "10";
+        let isOnLine = true;
+        let switchTest = "Marco"
+
+        if (condizione == "condizione") {
+            console.log("Ciao condizione");
+        } else {
+            console.log("Ciao BIba")
+        }
+
+        if (condizione == "condizione") {
+            console.log("Ciao condizione");
+        } else if(condizione == "ciao"){
+            console.log("Ciao Biba");
+        }else{
+            console.log("ciao ultimo");
+        }
+       
+        if (condizioneNumero === 10) {
+            console.log("ok");
+        } else{
+            console.log("non va bene");
+        }
+
+        if(condizioneNumero < 20) {
+        if (condizioneNumero % 2 == 0) {
+            console.log("Pari");
+        } else {
+            console.log("Dispari");
+            }
+        }
+
+        if (!(condizione == "condizione")) { // || (oppure, or, basta che una delle due condizioni si giusta) && (e, and, tutte le condizioni devono essere esatte)
+            console.log("ok");
+        } else {                            // ! (no, not, se la o le condizioni nella parentesi del ! sono vere si passa all'else. Perchè il punto esclamativo dice che non si passa all'if se la condizione è vera 
+            console.log("non va bene");
+
+        }
+
+        if (!isOnLine) {  //qua chiede se la condizione è falsa. quindi se isOnLine è falsa si va in if
+            console.log("non è online");
+        } else {
+            console.log("è online");
+        }
+
+        switch (switchTest) {
+            case "Luca":
+                console.log("Ciao Luca");
+                break;
+            case ("Marco") :
+                console.log("Ciao Marco");
+                break;
+            case ("Gino") :
+                console.log("Ciao Gino");
+                break;
+            default:
+                console.log("Non so il tuo nome");
+        }
+
+        let ternaryOperator = 20;
+        let tPEsempio = (ternaryOperator > 20) ? "Maggiore 20" : "Minore 20"; // (condizione) ? si : no
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*
+Before & After sono definiti pseudoelementi poichè ci permettono di inserire contenuti che in realtà non sono presenti nella pagina HTML: motivo per cui ci permettono anche di separare ulteriormente lo stile (CSS) dalla struttura (HTML).
+*/
+
+h2::before{
+    content: "Il mio nome è ";
+    color: green;
+}
+
+
+
+h2::after{
+    content: " Moschetto";
+    color: red;
+    font-weight: lighter;
+}

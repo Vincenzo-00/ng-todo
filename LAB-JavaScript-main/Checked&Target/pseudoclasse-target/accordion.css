@@ -1,0 +1,79 @@
+.accordion {
+	background:#eeeeee;
+	padding:20px;
+	width:500px;
+	margin:10px auto;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+
+	-moz-box-shadow:0 0 4px #999999;
+	-webkit-box-shadow:0 0 4px #999999;
+	box-shadow:0 0 4px #999999;
+	text-align:left;
+}
+
+.accordion h2 {
+margin:0 0 15px 0;
+}
+ 
+.accordion > div {
+	border-bottom:1px solid #dddddd;
+	padding:0;
+	background:#ffffff;
+}
+
+.accordion h3 {
+	padding:0;
+	margin:0;
+}
+
+.accordion p {
+	font-size:12px;
+}
+
+ 
+.accordion h3 a {
+	display:block;
+	padding:10px 15px;
+	color:#000000;
+	outline:none;
+}
+
+/*Inserisco una freccia*/
+
+/*Esiste anche a:after*/
+
+.accordion h3 a:before {
+	content:"\2192";
+	padding-right:5px;
+}
+
+
+.accordion h3 a:hover {
+	background:#dddddd;
+}
+
+/*.accordion div div*/
+.accordion h3 + div {
+	max-height:0;
+	overflow:hidden;
+	padding:0 15px;
+
+	-webkit-transition: max-height 1s;
+	-moz-transition: max-height 1s;
+	-o-transition: max-height 1s;
+	transition: max-height 1s;
+}
+
+div:target > div {
+	max-height: 700px;
+}
+
+div:target > h3 a {
+	color: red;
+}
+
+div:target h3 a::before {
+	content: "/";
+}

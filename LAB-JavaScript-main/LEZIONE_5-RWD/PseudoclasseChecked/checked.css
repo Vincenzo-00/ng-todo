@@ -1,0 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked {
+    margin-left: 30px;
+}

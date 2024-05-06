@@ -1,0 +1,207 @@
+html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 40px;
+    padding: 0;
+    width: 100%;
+    width: auto;
+    box-sizing: border-box;
+}
+
+/* TITOLI */
+
+#title {
+    width: 100%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+#title h1 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    width: 50%; 
+    font-size: 4em;
+    float: left;
+}
+
+#title h2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    font-size: 4em;
+    float: left;
+}
+
+/* QUATTRO FOTO IN LINEA */
+
+#mainPhotos {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    box-sizing: border-box;
+}
+
+#mainPhotos img {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 24.1%;
+    max-width: 45%;
+    box-sizing: border-box;
+}
+
+#mainPhotos img:nth-child(2) {
+    margin: 0 1.2%;
+}
+
+#mainPhotos img:nth-child(3) {
+    margin-right: 1.2%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.midTitle {
+    font-size: 3em;
+    text-decoration: wavy;
+}
+
+/* IMMAGINE PIù DESCRIZIONE DI FIANCO  */
+
+#mediaContent {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+#mediaContent img {
+    width: 48%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 12%;
+}
+
+#mediaContent div {
+    width: 40%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.4;
+    display: inline;
+}
+
+#mediaContent div p:first-child {
+    font-size: 2em;
+}
+
+#mediaContent div p:last-child {
+    font-size: 1.5em;
+    margin-top: 7px;
+}
+
+/* SEZIONE PORTFOLIO  */
+ 
+#portfolioMenu {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+#portfolioMenu div {
+    width: 32.3%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    float: left;
+    box-sizing: border-box;
+}
+
+#portfolioMenu div:nth-child(2)  {
+    margin: 0 1.5%;
+}
+
+#portfolioMenu div img {
+    width: 100%;
+    height: auto;
+}
+
+#portfolioMenu div h2 {
+    font-size: 1.8em;
+    margin: 3% 0 1% 0;
+}
+
+#portfolioMenu div p:first-of-type {
+    font-size: 1.4em;
+    margin-bottom: 4%;
+}
+
+#portfolioMenu div p:last-of-type {
+    font-size: 1.4em;
+    font-style: oblique;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+footer div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer div:first-of-type{
+    float: left;
+    width: 33%;
+    overflow: hidden;
+    margin-right: 5%;
+}
+
+footer div:nth-last-child(-n+4) {
+    display: inline-block;
+    width: 30%;
+    overflow: hidden;
+}
+
+footer p:first-of-type {
+    font-size: 3em;
+}
+
+footer p:nth-of-type(2), p:nth-of-type(3), p:nth-of-type(4) {
+    margin: 5% 0 3% 0;
+    font-size: 1.2em;
+}
+
+#footerContacts {
+    margin-top: 3%;
+    line-height: 1.4;
+}
+
+#footerContacts p {
+    margin: 0;
+}
+
+#footerContacts p:nth-child(2) {
+    margin-top: 4%;
+}

@@ -1,0 +1,30 @@
+* {
+    font-family: "Cute Font", sans-serif;
+    font-size: 20px;
+}
+
+#title {
+    color: orangered;
+    text-align: center;
+}
+
+#box1 {
+    width: 350px;
+    height: auto;
+    background-color: beige;
+    margin: 15px 0px 15px 0px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+#box2 {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    background-color: beige;
+    margin: 15px;
+    padding: 15px 25px;
+    border-width: 10px 5px;
+    border-style: dashed;
+    border-color: orange orange;
+}

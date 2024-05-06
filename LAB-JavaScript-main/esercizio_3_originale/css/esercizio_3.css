@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;700&display=swap');
+
+*{
+    font-family: 'Wix Madefor Display', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+
+h1{
+    margin:0;
+    padding:25px;
+    background-color: #F3A002;
+    color:#fff;
+    text-align: center;
+}
+
+
+
+#risultato{
+    font-size: 6em;
+    margin:50px 0 0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#pulsanti{
+    padding: 0;
+    margin: 40px 0 0;
+    list-style: none;
+    text-align: center;
+}
+
+#pulsanti li{
+    display: inline-block;
+    padding: 10px;
+}
+
+#pulsanti li button{
+    font-size: 1.1em;
+    padding: 6px 15px;
+    cursor: pointer;
+}

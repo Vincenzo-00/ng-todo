@@ -1,0 +1,185 @@
+/*stili generali*/	
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: "Georgia", serif;
+  line-height: 150%;
+}
+
+h1 {
+  line-height: 100%;
+}
+
+#pageBody {
+  max-width: 1200px; 
+  margin:0 auto;
+}
+
+#header, #nav, #footer, h1, h2, h3 {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+#header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#header .inner {
+  margin: 0 0 20px 0;
+  padding: 20px;
+  color: #fff;
+  background: #F38630;  
+}
+
+#header a {
+  display: block;
+  float: right;
+  color: #fff;
+  font-weight: normal;
+  font-size: 80%;
+}
+
+#content {
+  float: left;
+  width: 65%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+#content .inner {
+  margin-right: 20px;
+  padding: 20px;
+  color: #333;
+  background: #E0E4CC;
+}
+
+
+/**********/
+/* #content img{
+  max-width: 100%;
+} */
+img{
+  width: 100%;
+}
+/**********/
+
+
+#sidebar {
+  float: right;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar .inner {
+  margin-right: 20px;
+  padding: 20px;
+  color: #fff;
+  background: #69D2E7;
+  font-size: 85%;
+}
+
+#nav {
+  float: right;
+  width: 15%;
+  margin: 0;
+  padding: 0;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+  color: #333;
+  background: #A7DBD8;
+  overflow: hidden;  
+}
+
+#nav li {
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+#nav li:last-child {
+  border-bottom: none;
+}
+
+#nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0 10px 10px;
+  font-weight: bold;
+}
+
+#nav a:hover {
+  background: green;
+}
+
+#footer {
+  clear: both;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #FA6900;  
+}
+
+#footer .inner {
+  padding: 5px 20px;
+}
+/*stili generali*/
+
+/* Se la larghezza della viewport <= 1024 pixels ... */
+
+@media screen and (max-width: 1024px) {
+	
+  #content {
+	width: 75%;
+  }
+
+  #nav, #sidebar {
+	width: 25%;
+  }
+
+  /* Aggiusta i margini della sidebar */
+
+  #sidebar .inner {
+	margin-right: 0;
+	margin-top: 20px;
+  }
+
+}
+
+
+/* Se la larghezza della viewport <= 768 pixels ... */
+
+@media screen and (max-width: 768px) {
+	
+
+  #nav, #content, #sidebar {
+	width: 100%;
+  }
+  
+  #content .inner {margin-right: 0;}
+  
+  #nav {margin-bottom: 20px;}
+  
+  #sidebar {margin: 0 0 20px;}
+  
+  #sidebar .inner {margin-top: 0px;}
+
+  #nav li {
+	  float: left;
+	  width: 25%;
+	  border-bottom: none;
+	  border-right: 1px solid rgba(255,255,255,.5);
+	  box-sizing: border-box
+  }
+
+  #nav li:last-child {
+	  border-right: none;
+  }
+
+  #nav a {text-align: center;padding-left: 0;}
+}

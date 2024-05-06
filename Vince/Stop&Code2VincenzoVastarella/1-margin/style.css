@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+}
+
+#box_1 {
+    width: 450px;
+    height: 280px;
+    background-color: pink;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+#box2 {
+    width: 350px;
+    height: 230px;
+    text-align: center;
+    background-color: aqua;
+    margin-left: 40px;
+}

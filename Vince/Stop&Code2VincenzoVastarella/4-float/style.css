@@ -1,0 +1,28 @@
+* {
+    font-family: "Single Day", sans-serif;
+}
+
+#box1 {
+    width: 400px;
+    height: auto;
+    background-color: beige;
+    margin: 15px 0 15px 0;
+    padding: 20px;
+    border: 5px ridge black;
+    float: left;
+    box-sizing: border-box;
+}
+
+#box2 {
+    width: 340px;
+    height: auto;
+    text-align: center;
+    background-color: beige;
+    margin: 15px;
+    padding: 15px 25px;
+    border-width: 10px 5px 10px 5px;
+    border-style: dotted;
+    border-color: green orange green orange;
+    float: left;
+    box-sizing: border-box;
+}

@@ -1,0 +1,25 @@
+* {
+    font-family: "Protest Riot", sans-serif;
+}
+
+.box {
+    width: 440px;
+    height: auto;
+    background-color: beige;
+    margin: 10px 0px 10px 35px;
+    padding: 25px;
+    border-top: 10px double black;
+    border-bottom: 10px double black;
+}
+
+.box2 {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    background-color: cadetblue;
+    margin: 15px;
+    padding: 10px 35px 10px 35px;
+    border-width: 10px 8px 10px 5px;
+    border-style: groove;
+    border-color: green red green orange;
+}
