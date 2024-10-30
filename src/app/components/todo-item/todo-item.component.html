@@ -1,0 +1,8 @@
+<!-- diciamo al div di che può comparire se todo 
+non è undefined -->
+<div *ngIf="todo" class="d-flex justify-content-between"> 
+    {{ todo.text }}
+    <button type="button" class="btn-success">
+        <i class="bi bi-check"></i>
+    </button>
+</div>
