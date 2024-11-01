@@ -9,4 +9,8 @@ import { TODOS } from '../../data/todos';
 })
 export class TodoListComponent {
   todos: Todo[] = TODOS;
+
+  completa(todo: Todo) {
+    console.log('Richiesta elimnazione:', todo);
+  }
 }
