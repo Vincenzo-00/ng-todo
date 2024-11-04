@@ -12,10 +12,10 @@ export class TodoItemComponent {
 
   //  CREAZIONE DELL'ALLARME
   @Output()
-  onRichiestaCompletamento = new EventEmitter<Todo>();
+  onRichiestaCompletamento = new EventEmitter<number>();
 
   //  ATTIVAZIONE DELL'ALLARME
   richiediCompletamento() {
-    this.onRichiestaCompletamento.emit(this.todo);
+    this.onRichiestaCompletamento.emit(this.todo!.id);
   }
 }

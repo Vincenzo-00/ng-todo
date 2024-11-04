@@ -1,8 +1,10 @@
 <!-- diciamo al div di che può comparire se todo 
 non è undefined -->
 <div *ngIf="todo" class="d-flex justify-content-between">
-  {{ todo.text }}
-  <button type="button" class="btn-success" (click)="richiediCompletamento()">
+  <span [ngClass]="{ 'text-decoration-line-through': todo.completed }">{{
+    todo.text
+  }}</span>
+  <button type="button" class="btn-success" *ngIf="!todo.completed" (click)="richiediCompletamento()">
     <i class="bi bi-check"></i>
   </button>
 </div>

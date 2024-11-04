@@ -10,7 +10,21 @@ import { TODOS } from '../../data/todos';
 export class TodoListComponent {
   todos: Todo[] = TODOS;
 
-  completa(todo: Todo) {
-    console.log('Richiesta elimnazione:', todo);
+  completa(id: number) {
+    console.log('Richiesta elimnazione:', id);
+
+    const todo = this.todos.find(t => t.id == id);
+
+    if (todo) {
+      const index = this.todos.indexOf(todo);
+      this.todos[index].completed = true;
+    }
+
   }
+
+  getDaCompletare() {
+    return this.todos.filter(t => !t.completed).length;
+
+  }
+
 }
